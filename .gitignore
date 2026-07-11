@@ -1,0 +1,52 @@
+# Raw sequencing reads
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+
+# Trimmed reads
+*_val_1.fq.gz
+*_val_2.fq.gz
+
+# Reference genome / annotation (download separately, don't version)
+ref/
+*.fa
+*.fasta
+*.gtf
+*.gff
+*.gff3
+
+# STAR index and alignment output
+STAR_index/
+STAR_output/
+*.bam
+*.bai
+*.sam
+
+# Picard duplicate metrics (large, regenerable)
+*_dup_metrics.txt
+
+# deepTools coverage tracks
+deeptools_output/
+*.bw
+*.bigwig
+
+# featureCounts output (can be large; comment out if you want to keep count.out tracked)
+count.out
+count.out.summary
+
+# QC reports (HTML reports can be regenerated; keep if you want them versioned instead)
+*_fastqc.html
+*_fastqc.zip
+*_fastp_report.html
+multiqc_report_raw_reads.html
+multiqc_report_trimmed_reads.html
+multiqc_data/
+
+# SLURM logs
+slurm-*.out
+*.log
+
+# OS/editor junk
+.DS_Store
+*.swp
