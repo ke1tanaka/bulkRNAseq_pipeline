@@ -50,3 +50,7 @@ slurm-*.out
 # OS/editor junk
 .DS_Store
 *.swp
+
+# Jupyter notebook junk
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
