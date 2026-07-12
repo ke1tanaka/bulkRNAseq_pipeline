@@ -156,7 +156,7 @@ gene_sets <- list(
 )
 
 # Create a single output directory if it doesn't exist
-output_dir <- "/home/kt368/Documents/GO_analysis_LPHN2KD_flow/results"
+output_dir <- "HERE IS PATH FOR OUTPUT FOLDER"
 if (!dir.exists(output_dir)) {
   dir.create(output_dir, recursive = TRUE)
 }
@@ -165,7 +165,7 @@ if (!dir.exists(output_dir)) {
 for (condition in conditions) {
   for (gender in genders) {
     # Construct file path for the input gene list
-    file_path <- sprintf("/home/kt368/Documents/GO_analysis_LPHN2KD_flow/gene_list_LPHN2KD.csv", condition, gender)
+    file_path <- sprintf("HERE IS PATH FOR INPUT CSV FILE", condition, gender)
     
     # Check if file exists before proceeding
     if (!file.exists(file_path)) {
